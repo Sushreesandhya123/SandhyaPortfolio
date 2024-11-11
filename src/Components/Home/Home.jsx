@@ -3,6 +3,9 @@ import avatarImg from "../../assets/7358602-removebg-preview.png";
 import TextChange from "../TextChange";
 
 const Home = () => {
+  const resumeLink = "https://drive.google.com/file/d/1ssA7EN4fQbbD-vCzGaEazhCFfJ11V6kN/preview";
+  const githubLink = "https://github.com/Sushreesandhya123"; // GitHub link
+
   return (
     <div className="text-white flex w-full justify-between items-start p-4 md:p-20">
       <div className="md:w-2/4 md:pt-0">
@@ -25,9 +28,16 @@ const Home = () => {
               Contact Me
             </button>
           </a>
-          <button className="text-white py-3 px-6 text-lg md:text-xl md:py-4 md:px-8 w-48 mb-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
-            Resume
-          </button>
+          <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+            <button className="text-white py-3 px-6 text-lg md:text-xl md:py-4 md:px-8 w-48 mb-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+              Resume
+            </button>
+          </a>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+            <button className="text-white py-3 px-6 text-lg md:text-xl md:py-4 md:px-8 w-48 mb-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+              GitHub
+            </button>
+          </a>
         </div>
       </div>
       <div>
